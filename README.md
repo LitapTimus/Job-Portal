@@ -270,6 +270,7 @@ job-portal-mern/
 - Advanced search filters
 - Resume parsing
 - Interview scheduling
+- **AI Resume Analyzer** ✨ - Upload and get AI-powered analysis with scoring and improvement suggestions
 - Messaging system
 - Company profiles with reviews
 - Saved jobs feature

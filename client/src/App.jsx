@@ -12,6 +12,7 @@ import CandidateDashboard from './pages/CandidateDashboard';
 import RecruiterDashboard from './pages/RecruiterDashboard';
 import CandidateProfile from './pages/CandidateProfile';
 import CandidateSearch from './pages/CandidateSearch';
+import ResumeAnalyzer from './pages/ResumeAnalyzer';
 
 const queryClient = new QueryClient();
 
@@ -74,6 +75,14 @@ function App() {
               element={
                 <ProtectedRoute requiredRole="recruiter">
                   <CandidateSearch />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/resume-analyzer"
+              element={
+                <ProtectedRoute requiredRole="candidate">
+                  <ResumeAnalyzer />
                 </ProtectedRoute>
               }
             />

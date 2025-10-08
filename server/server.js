@@ -12,6 +12,10 @@ const jobRoutes = require('./routes/jobs');
 const applicationRoutes = require('./routes/applications');
 const userRoutes = require('./routes/users');
 const analyticsRoutes = require('./routes/analytics');
+const resumeRoutes = require('./routes/resume');
+const configRoutes = require('./routes/config');
+const geminiTestRoutes = require('./routes/gemini-test');
+const debugRoutes = require('./routes/debug');
 
 const app = express();
 
@@ -52,6 +56,10 @@ app.use('/api/jobs', jobRoutes);
 app.use('/api/applications', applicationRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/resume', resumeRoutes);
+app.use('/api/config', configRoutes);
+app.use('/api/gemini-test', geminiTestRoutes);
+app.use('/api/debug', debugRoutes);
 
 // Health check
 app.get('/health', (req, res) => {

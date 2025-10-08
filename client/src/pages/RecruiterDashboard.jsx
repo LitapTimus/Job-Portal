@@ -50,11 +50,11 @@ export default function RecruiterDashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white shadow-sm">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-indigo-50">
+      <nav className="bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <Link to="/" className="text-2xl font-bold text-indigo-600">JobPortal</Link>
+            <Link to="/" className="text-2xl font-bold text-gradient hover-glow transition-all duration-300">JobPortal</Link>
             <div className="flex gap-4 items-center">
               <Link
                 to="/candidates"
